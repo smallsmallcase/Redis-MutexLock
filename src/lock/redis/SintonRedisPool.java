@@ -23,7 +23,7 @@ public class SintonRedisPool {
             synchronized (SintonRedisPool.class) {
                 if (instance == null) {
 
-                    instance = new JedisPool("39.108.131.39",6379);
+                    instance = new JedisPool("hostname",6379);
                 }
             }
         }
